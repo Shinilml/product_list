@@ -14,7 +14,7 @@ class _ProductScreenState extends State<ProductScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<Productscreencontroller>(context, listen: false).getFacts();
+      Provider.of<Productscreencontroller>(context, listen: false).getData();
     });
   }
 

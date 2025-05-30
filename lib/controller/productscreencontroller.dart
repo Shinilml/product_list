@@ -6,7 +6,7 @@ class Productscreencontroller with ChangeNotifier {
   List<ProductModel>? resobj;
   bool isLoadingProducts = false;
 
-  Future<void> getFacts() async {
+  Future<void> getData() async {
     final url = Uri.parse("https://dummyjson.com/products");
     isLoadingProducts = true;
     notifyListeners();
